@@ -29,13 +29,10 @@
 
    <!-- delimeter -->
 
-   <!-- escaped o/p -->
-  <p> <%= message %> </p>
-
    <!-- scriplet(logic) -->
-  <% for(let i=0; i<3; i++) {%>
-   <p>Item : <%= i+1 %></p>
-  <% }%>
+  <% message.forEach(msg=>{%>
+   <p><%= msg %></p>
+  <% })%>
 
 </body>
 </html>

@@ -15,7 +15,11 @@ app.post('/api/auth/register', (req,res)=>{
 })
 
 app.get('/',(req, res)=>{
-  res.render("index", {message: "hello from ejs"})
+  res.render("index", {message: [
+    "hi",
+    "hello",
+    "hui"
+  ]})
 })
 
 module.exports = app
